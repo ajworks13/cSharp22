@@ -113,8 +113,69 @@ class Program {
 
 		}while(condition)
 
+			--------------------
+
+		for(declare; condition; manipulate){
+
+		}
+
+				------------------
+
+		foreach(int i array){
+
+		}
+
 		*/
-		
+
+		//     Object Oriented Programing ----------------------------
+
+		/*
+				Encapsulation - hiding and exposing of data to outside classes and code.
+					use access modifers and properties.
+					public - can be accessed by class in the application.
+					protected - can be used within the same class, or any subclass even if they are in another assembly.
+					private - only accessed within the same class.
+					no modifer - "internal" access privleges. Accessible by any class or subclass in the same assembly, but is invisible to code outside of the assembly.
+
+					property:
+						get { return robotType; }
+						set { robotType - value; }
+
+				Constructor:
+					Must have same name as class.
+					No return type or even void.
+					Can only be called by using new.
+
+
+				Inheritance:
+
+
+				Abstract classes:
+					Cannot be instatiated, only inherited.
+					MAY contain abstract methods.
+					Child classes MUST implement inherited abstarct methods, or
+						else be abstract classes too.
+					Used when wanted to provide a default behavior.
+					for non-public properties or provide backing fields.
+					Noun.
+
+				Interfaces:
+					used to guarantee that subclasses will provide an implementation for certain behaviors.
+					All declared methods MUST be abstarct.
+					Properties MUST NOT have backing fields, nor get/set.
+					Cannot be instantiated, only inherited.
+					A class CAN implement multiple interfaces.
+					All methods and properties are implicitly public.
+					When you want to guarantee that a certain behavior will be implemented.
+					Verbs.
+
+
+
+
+					
+			
+		*/
+	
 		
 		//Console.ReadLine();
   } // main method / starting point.
