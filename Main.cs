@@ -148,7 +148,16 @@ class Program {
 
 
 				Inheritance:
+					Organize classes into a heirarchy.
+					Properties and behaviors from the top of the heirarchy will be present in classes lower in the heirarchy.
+					Behaviors inhreited from a parent class can be overridden by a child.
+					Inheritance reduces boilerplate code.
+					Starts with Parent class. Also called base or super class.
+					sealed: prevents a class from being inherited.
+					can NOT have multiple inheritance.
 
+					public virtual void Travel() // allows child to alter.
+					public override void Travel() // in child class.
 
 				Abstract classes:
 					Cannot be instatiated, only inherited.
@@ -168,14 +177,109 @@ class Program {
 					All methods and properties are implicitly public.
 					When you want to guarantee that a certain behavior will be implemented.
 					Verbs.
-
-
-
-
 					
 			
 		*/
-	
+
+
+
+		//        COLLECTIONS  --------------------------------
+
+		// Arrays - fixed length, same-type objects.
+		/*
+				object[] myArr = new object[5];
+				object[] myArr = { 1,2,3 };
+
+				Multi-Dimensional:
+					int[ , ] table = new int[10,10];
+
+
+			Lists - variable length array, will resize to fit contents
+				List<object> myList = new List<object>();
+				myList.Add("Hi");
+
+				foreach(string s in myList){
+					Console.WriteLine(s);
+				}
+
+
+			Dictionaries - Key and Value pair. Returns null if value doesnt exist.
+				Dictionary<int,String> myDic = new Dictionary<int, String>();
+				myDic.Add(1, "Bob");
+
+				// Try Get 
+				String output;
+				if(contacts.ContainsKey("GR")){
+					contacts.TryGetValue("GR", out output);
+					if(output != null){
+						Console.WriteLint(output)l
+					}
+				}
+
+		*/
+
+		//        Strings ------------------------------
+		/*
+			String objects are immutable.
+			Reference Variables                    Heap Memory
+				String var1                            "Hello"
+				String var2   // share memory if assigned the same.
+
+					use String var2 = new String("Hello") to create new memory.
+
+			String methods:
+				.isNullOrEmpty
+				.Insert(1, "o");
+				.StartsWith("first")
+				.EndsWith("ot")
+				.Substring(2)
+				.contains("p")
+				.spaceDelimitedString.Split(new char[] { ' ' })
+				@ - ignores escape character.
+				\t - tabbed line.
+				\n - new line.
+
+
+			StringBuilder class is Mutable alternative to Strings.
+
+		*/
+
+		// EXCEPTIONS ------------------------------
+		/*
+			default exception prints a stacktrace and crashes app.
+			Handled by using try/catch.
+			Can throw an error at will.
+			ArithmeticException.
+			NullReferenceException.
+			IndexOutOfRangeException.
+			StackOverflowException.
+
+			try{
+				int zero = 0;
+			}catch(ArhitmaticException e){
+				Console.WriteLine(e.StackTrace);
+			}catch(StackOverflowException){
+
+			}finally{
+				// prints even after an error occurs.
+			}
+
+			// throw new Exception();
+
+
+
+
+
+
+    */
+
+
+
+
+
+
+
+
 		
 		//Console.ReadLine();
   } // main method / starting point.
