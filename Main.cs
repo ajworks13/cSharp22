@@ -14,7 +14,7 @@ class Program {
   public static void Main (string[] args) {
 		
     Console.WriteLine ("{0}", hello);
-		Console.ReadLine(); // listens for user input.
+		//Console.ReadLine(); // listens for user input.
 
 		// ------------- DATA TYPES ------------------------
 		/*
@@ -41,8 +41,82 @@ class Program {
 
 
 		*/
+		int someVariable;
+		someVariable = 2;
 
+		double d = 1.5;
+		double accountBalace = 120.3;
+		d = 50.6;
+
+		char c = 'c';
+		char dollar = '$';
+
+		string s = "Hello world";
+		string welcomeMessage = "Hi and welcome to my home";
+		string emptyString = "";
+		string oneCharacter = "c";
+
+		bool b = true;
+		bool activeBankAccount = false;
+		activeBankAccount = b;
+
+
+		// ---- OPERATORS --------------
+		/*
+			= : assignment
+			+   -   *   /
+			== : Are these references the same, not objects.
+			Equals() : compares objects.
+
+						LOGICAL
+			&& - And || - Or  ! - Not
+		*/
+		int count = 3;
+		count += 2; // 5
+
+		if (count < 10){
+			Console.WriteLine("Its below");
+		}else{
+			Console.WriteLine("Its higher");
+		}
+
+
+		//         SWITCH - 
+		int menu = 1;
+
+		switch(menu){
+			case 1:
+				Console.WriteLine("You selected option 1");
+				break;
+			case 2:
+				Console.WriteLine("You selected option 2");
+				break;
+			case 3:
+			case 4:
+				Console.WriteLine("You selected 3 and or 4");
+				break;
+			default:
+				Console.WriteLine("Invalid input");
+				break;
+		}
+
+		//            LOOPS
+		/*
+
+		while(condition){
+
+		}
 		
+			--------------------
+
+		do{
+
+		}while(condition)
+
+		*/
+		
+		
+		//Console.ReadLine();
   } // main method / starting point.
 	
 } //class
